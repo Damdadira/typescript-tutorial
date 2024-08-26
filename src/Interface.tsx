@@ -47,4 +47,13 @@ class Developer2{
   }
 }
 const josh = new Developer2();
-josh.name = 'JOSH CARROT' //error, 이름이 너무 깁니다.
+// josh.name = 'JOSH CARROT' //error, 이름이 너무 깁니다.
+
+//Generic
+function getText<T>(text: T):T{
+  return text;
+}
+const b = getText<string>('hi');
+console.log(b);
+getText<number>(10);
+getText<boolean>(true);
