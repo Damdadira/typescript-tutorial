@@ -15,7 +15,7 @@ interface User{
 }
 const Sam: User = { name:'Sam' }
 export function ShowName(this: User){
-  console.log(this.name)
+  // console.log(this.name)
 }
 const a = ShowName.bind(Sam);
 a();
