@@ -5,7 +5,7 @@ import { LogAge } from './Interface';
 function App() {
   const sumResult = Sum(10, 20);
   const restSumResult = RestSum(1,2,3,4,5,6);
-  const logAgeResult = {name: 'Capt', age: 28}
+  const logAgeResult = {name: 'Capt', age: 28, phone: '010-1234-1234'}
 
   return (
     <>
@@ -25,7 +25,7 @@ function App() {
           <PiButterflyLight></PiButterflyLight>
         </h2>
         <LogAge {...logAgeResult}></LogAge>
-        <LogAge {...{name: 'Cindy', age: 23}}></LogAge>
+        <LogAge {...{name: 'Cindy', age: 23, phone: '010-1234-1234'}}></LogAge>
         <hr/>
       </div>
       
